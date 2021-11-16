@@ -1,0 +1,16 @@
+{
+    "menu": [
+        {
+            "name": "Net Worth",
+            "routerLink": "",
+            "identifier": "dashboard",
+            "iconClass": "fa fa-area-chart",
+            "isbreadcrumbMessage":true,
+            "breadcrumbMessage": "Shakepay Asset Holdings",
+            "isCategory": false,
+            "isApp": true,
+            "children": []
+        }
+       
+    ]
+}

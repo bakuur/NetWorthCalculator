@@ -1,0 +1,115 @@
+// Login page design version 1
+.auth-div{
+    
+    .body{
+        justify-content: center;
+    }
+    
+    // responsive css 
+    @media only screen and (max-height: $break-xlarge) {
+        
+    }
+    @media only screen and (max-width: $break-large) {
+        
+    }
+    @media only screen and (max-height: $break-medium - 50px) {
+        margin: 0 !important;
+        height: 100vh !important;
+        padding: 0 !important;
+        .body {
+            min-height: 100vh !important;
+            &.p-xl-5{
+                padding: 1rem !important;
+            }
+        }
+    }
+}
+
+// Login page design version 2
+.auth-div2,
+.auth-div3{
+
+    height: auto !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    .body{
+        min-height: 100vh !important;
+        justify-content: center;
+    }
+}
+
+// Login page design version 3
+.auth-div3{
+    background: var(--primary-gradient); 
+
+    @media only screen and (max-width: $break-small) {
+        .input-group{
+            >:not(:first-child){
+                margin-left: 0 !important;
+                .form-control{
+                    border-radius: 0 !important;
+                }
+            }
+            .btn{
+                width: 100%;
+                border-radius: 0 0 .25rem .25rem !important;
+            }
+        }
+        .form-floating{
+            width: 100%;
+            .form-control{
+                border-radius: .25rem .25rem 0 0 !important;
+            }
+        }
+    }   
+}
+
+// Login page design version 4
+.auth-div4{
+    width: 100%;
+    height: 100vh;
+
+    .login-img{
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+
+        @media only screen and (max-width: $break-small) {
+            height: 300px;
+        }
+    }
+    .contents{
+        width: 100%;
+    }
+}
+
+// Login page design version 5
+.auth-div5{
+    border-top: 15px solid var(--card-color);
+
+    @media only screen and (max-width: $break-small) {
+
+        .input-group{
+            >:not(:first-child){
+                margin-left: 0 !important;
+                .form-control{
+                    border-radius: 0 !important;
+                }
+            }
+            .btn{
+                width: 100%;
+                border-radius: 0 0 .25rem .25rem !important;
+            }
+        }
+        .form-floating{
+            width: 100%;
+            .form-control{
+                border-radius: .25rem .25rem 0 0 !important;
+            }
+        }
+    }
+    @media only screen and (max-width: $break-medium) {
+        height: auto !important;
+        margin-top: 0 !important;
+    }
+}

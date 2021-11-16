@@ -1,0 +1,49 @@
+
+// Overriding bootstrap to run version ^5.0.0-beta1 (Which is not supported for bootstrap-vue version ^2.21.2)
+@import "./bootstrap/scss/bootstrap.scss";
+
+// Global
+@import "../scss/global/fonts";
+@import "../scss/global/themes";
+@import "../scss/global/variables";
+@import "../scss/global/mixins";
+@import "../scss/global/general";
+@import "../scss/global/rtl-mode";
+
+// Dynamic Color scss
+
+// Custom Bootstrap Components
+@import "../scss/bootstrap/custom";
+
+// Generic
+@import "../scss/generic/helpers";
+@import "../scss/generic/animate";
+@import "../scss/generic/setting-bar";
+
+
+// Skeleton
+@import "../scss/skeleton/layout-a";
+@import "../scss/skeleton/layout-b";
+@import "../scss/skeleton/layout-c";
+@import "../scss/skeleton/layout-d";
+@import "../scss/skeleton/layout-d-sub-header";
+@import "../scss/skeleton/layout-e";
+@import "../scss/skeleton/layout-f";
+@import "../scss/skeleton/layout-g";
+@import "../scss/skeleton/layout-h";
+@import "../scss/skeleton/layout-i";
+
+// Plugin scss
+@import "../scss/plugin/calendar";
+@import "../scss/plugin/chat";
+@import "../scss/plugin/timeline";
+@import "../scss/plugin/invoices";
+@import "../scss/plugin/colorpicker.min.scss";
+
+
+// Application widgets
+@import "../scss/widgets/card";
+@import "../scss/widgets/list";
+@import "../scss/widgets/table";
+
+@import "../scss/global/high-contrast";

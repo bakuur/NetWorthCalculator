@@ -1,0 +1,23 @@
+
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin overflow($scroll) {
+    overflow-y: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none;  // IE 10+
+
+    &::-webkit-scrollbar { // WebKit 
+        width: 3px;
+       // background-color: var(--primary-color)
+    }
+    &::-webkit-scrollbar-thumb {
+       // background: var(--primary-color)
+    }
+}

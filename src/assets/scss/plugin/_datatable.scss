@@ -1,0 +1,29 @@
+.table {
+    &.myDataTable{
+		width: 100% !important;
+		.dtr-details{
+			width: 100%;
+			li{
+				border-color: var(--border-color) !important;
+			}
+		}
+		tr{
+            td, th{
+                
+                &:first-child{
+                    outline: none;
+                }
+            }
+        }
+	}
+	&.table-lg{
+		&.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>{
+			td:first-child,
+			th:first-child{
+				&::before{
+					top: 24px;
+				}
+			}
+		}
+	}
+}

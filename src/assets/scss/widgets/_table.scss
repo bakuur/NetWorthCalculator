@@ -1,0 +1,26 @@
+table.dataTable.dtr-inline.collapsed{
+    >tbody>tr[role="row"]>{
+        td:first-child,
+        th:first-child{
+            padding-left: 40px;
+            &::before{
+                top: 14px !important;
+                left: 10px !important;
+                height: 15px;
+                width: 15px;
+                line-height: 16px !important;
+                background-color: var(--primary-color) !important;
+            }
+        }
+    }
+    &.d-row{
+        >tbody>tr[role="row"]>{
+            td:first-child,
+            th:first-child{
+                &::before{
+                    top: 22px !important;
+                }
+            }   
+        }
+    }
+}

@@ -1,0 +1,417 @@
+// Admin Layout (ALUI)
+// @author: WrapTheme
+// @design by: ThemeMakker Infotech LLP.
+// @event-namespace: ALUI
+// Copyright 2021 WrapTheme
+
+
+// bootstrap class overwrite css
+.border,
+.border-top,
+.border-right,
+.border-end,
+.border-bottom,
+.border-left,
+.border-start,
+.dropdown-divider,
+.input-group-text {
+    border-color: var(--border-color) !important;
+}
+.border-primary{
+    border-color: var(--primary-color) !important;
+}
+
+// form-control
+.form-control,
+.form-select {
+    border-color: var(--border-color);
+    background-color: var(--card-color);
+    color: var(--color-900);
+    font-size: 14px;
+
+    &::placeholder{
+        color: var(--color-400);
+    }
+    &:focus{
+        box-shadow: 0 0 10px rgba($dark, .15);
+        background-color: var(--card-color);
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+
+    &.form-control-lg{
+        min-height: calc(1.5em + 1.8rem + 2px);
+    }
+}
+
+// form Switches css
+.form-check-input{
+    -webkit-appearance: none;
+    &:checked {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+}
+
+// bottom
+.btn {
+    font-size: $font-size;
+
+    &.btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: $white;
+    }
+
+    &.btn-outline-primary {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+
+        &:hover{
+            color: $white;
+        }
+    }    
+    &.btn-outline-secondary {
+        border-color: var(--border-color)
+    }
+    &.btn-outline-success{
+        color: $color-success;
+        border-color: $color-success;
+        &:hover{
+            background-color: $color-success;
+            color: $white;
+        }
+    }
+    &.btn-outline-danger{
+        color: $color-danger;
+        border-color: $color-danger;
+        &:hover{
+            background-color: $color-danger;
+            color: $white;
+        }
+    }
+    &.btn-outline-info{
+        color: $color-info;
+        border-color: $color-info;
+        &:hover{
+            background-color: $color-info;
+            color: $white;
+        }
+    }
+
+    &.btn-white {
+        background-color: var(--color-fff);
+        border-color: var(--color-fff);
+        color: var(--color-700);
+    }
+    &.btn-dark {
+        background-color: var(--color-900);
+        border-color: var(--color-900);
+        color: var(--color-400);
+    }
+
+    &.btn-lg {
+        padding: .89rem 1rem;
+    }
+}
+button {
+    &:focus {
+		&:not(:focus-visible) {
+			box-shadow: none;
+		}
+	}
+}
+
+// avatar
+.avatar {
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+
+    &.xs{
+        width: 16px;
+        min-width: 16px;
+        height: 16px;
+    }
+    &.sm{
+        width: 22px;
+        min-width: 22px;
+        height: 22px;
+    }
+    &.lg{
+        width: 56px;
+        min-width: 56px;
+        height: 56px;
+    }
+    &.xl{
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
+    }
+    &.no-thumbnail{
+        background-color: var(--body-color);
+        color: var(--color-700);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// dropdown menu
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item.active{
+    background-color: var(--primary-color);
+    color: $white;
+}
+.dropdown-menu {
+    font-size: $font-size;
+}
+.after-none::after{
+    display: none;
+}
+
+// custom modal popup css
+.modal {
+    right: 0;
+    left: auto;
+    
+    &.fade{
+        .modal-dialog-vertical{
+            transform: translateX(-100%);
+        }
+    }
+    &.show{
+        .modal-dialog-vertical{
+            transform: translateX(0);
+        }
+    }
+    .modal-header,
+    .modal-footer{
+        border-color: var(--border-color);
+    }
+    .modal-title{
+        color: var(--color-500);
+    }   
+    .modal-content{
+        background-color: var(--card-color);
+        color: var(--color-500);
+        .dropdown-item{
+            color: var(--color-500);
+            &:hover{
+                color: var(--color-200);
+            }
+        }
+    }
+    .modal-dialog-vertical{
+        margin: 0;
+        height: 100%;
+        
+        .modal-content{
+            height: 100%;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+// breadcrumb
+.breadcrumb {
+    background-color: var(--color-200);
+}
+
+// navbar  
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: var(--color-500);
+            &:hover,
+            &:focus{
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+// custom tab ui
+.nav-tabs {
+    border-color: var(--border-color);
+    &.tab-custom{
+        border: 1px solid rgba($white, .2);
+        .nav-link{
+            color: $white;
+            opacity: 0.7;
+            &.active{
+                opacity: 1;
+                color: var(--primary-color);
+            }
+        }
+    }
+    &.tab-card{
+        .nav-link{
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            background-color: transparent;
+            border-bottom: 3px solid transparent;
+            color: var(--color-500);
+
+            &.active{
+                border-color: var(--primary-color);
+                color: var(--primary-color);
+            }
+        }
+    }
+    &.tab-body-header{
+        border: 1px solid Var(--primary-color);
+        overflow: hidden;
+        padding: 3px;
+        .nav-link{
+            border: 0;
+            margin: 0;
+            padding: .3rem 1rem;
+            border-radius: .25rem;
+            color: var(--color-500);
+
+            &:hover{
+                color: var(--primary-color);
+            }
+
+            &.active{
+                background-color: var(--primary-color);
+                color: $white;
+            }
+        }
+    }
+}
+
+// nav pill
+.nav-pills {
+    .nav-link.active,
+    .show>.nav-link{
+        background-color: var(--primary-color);
+    }
+    .nav-link{
+        color: var(--primary-color);
+    }
+}
+
+// list-group design
+.list-group-custom {
+    .list-group-item{
+        background-color: var(--card-color);
+        border-color: var(--border-color);
+        color: var(--color-500);
+        &.active{
+            background-color: var(--primary-color);
+        }
+    }
+}
+.list-group-item{
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+    color: var(--color-500);
+}
+
+// progress bar design
+.progress {
+    background-color: var(--color-200);
+}
+
+// table 
+.table {
+    border-color: var(--border-color);
+    tr{
+        th{
+            //border-color: var(--primary-color);
+            color: var(--color-800);
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        td{
+            border-color: var(--border-color);
+            color: var(--color-500);
+            padding: .8rem .6rem;
+        }
+        &:hover{
+            td{
+                color: var(--color-900);
+            }
+        }
+    }
+    &.border-primary{
+        tr th,
+        tr td{
+            border-color: var(--primary-color);
+        }
+    }
+    &.table-sm{
+        td{
+            padding: .5rem .6rem;
+        }
+    }
+    &.custom-table{
+        border-collapse: separate !important;
+        border-spacing: 0 5px !important;
+
+        thead{
+            tr{
+                th{
+                    border: 0;
+                }
+            }
+        }
+        tbody{
+            tr{
+                background: var(--card-color);
+                &.cancle-row{
+                     td{
+                        //background: rgba($color-danger, .05);
+                     }
+                }
+            }    
+        }
+        tr{
+            td, th{
+                vertical-align: middle;
+                white-space: nowrap;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                border-right: 0;
+                border-left: 1px solid var(--border-color);
+                
+                &:first-child{
+                    border-radius: 0.25rem 0 0 0.25rem;
+                    border-left: 0;
+                }
+                &:last-child{
+                    border-radius: 0 0.25rem 0.25rem 0;
+                }
+            }
+        }
+    }
+}
+
+// pagination
+.page-item{
+    
+    &.disabled{
+        .page-link{
+            background-color: var(--border-color);
+            border-color: var(--border-color);
+        }
+    }
+    &.active,
+    &:hover{
+        .page-link{
+            background-color: var(--primary-color);
+            border-color: var(--border-color);
+        }
+    }
+    .page-link{
+        background-color: var(--card-color);
+        border-color: var(--border-color);
+        color: var(--color-400);
+    }
+}

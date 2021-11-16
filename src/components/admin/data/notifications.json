@@ -1,0 +1,92 @@
+{
+    "notifications": {
+        "messages": [
+            {
+                "name":"Chris Fox",
+                "avtar":"avatar1.jpg",
+                "message":"changed an issue from \"In Progress\" to <span class=\"badge bg-success\">Review</span>",
+                "time":"2MIN"
+            },
+            {
+                "name":"Robert Hammer",
+                "avtar":"",
+                "message":"It is a long established fact that a reader will be distracted",
+                "time":"13MIN"
+            },
+            {
+                "name":"Orlando Lentz",
+                "avtar":"avatar3.jpg",
+                "message":"There are many variations of passages",
+                "time":"1HR"
+            },
+            {
+                "name":"Barbara Kelly",
+                "avtar":"avatar4.jpg",
+                "message":"Contrary to popular belief <span class=\"badge bg-danger\">Code</span>",
+                "time":"1DAY"
+            },
+            {
+                "name":"Robert Lentz",
+                "avtar":"avatar5.jpg",
+                "message":"making it over 2000 years old",
+                "time":"33MIN"
+            },
+            {
+                "name":"Orlando Kelly",
+                "avtar":"avatar6.jpg",
+                "message":"There are many variations of passages",
+                "time":"1HR"
+            },
+            {
+                "name":"Rose Rivera",
+                "avtar":"avatar7.jpg",
+                "message":"The generated Lorem Ipsum",
+                "time":"1DAY"
+            }
+        ],
+        "events": [
+            {
+                "event":"Campaign <strong class=\"text-primary\">Holiday Sale</strong> is nearly reach budget limit",
+                "faIcon":"fa-info-circle",
+                "time":"10:00 AM Today"
+            },
+            {
+                "event":"Your New Campaign <strong class=\"text-primary\">Holiday Sale</strong> is approved.",
+                "faIcon":"fa-thumbs-up",
+                "time":"11:30 AM Today"
+            },
+            {
+                "event":"Website visits from Twitter is <strong class=\"text-danger\">27% higher</strong> than last week.",
+                "faIcon":"fa-pie-chart",
+                "time":"04:00 PM Today"
+            },
+            {
+                "event":"<strong class=\"text-warning\">Error</strong> on website analytics configurations",
+                "faIcon":"fa-warning",
+                "time":"Yesterday"
+            },
+            {
+                "event":"Your New Campaign <strong class=\"text-primary\">Holiday Sale</strong> is approved.",
+                "faIcon":"fa-thumbs-up",
+                "time":"11:30 AM Today"
+            }
+        ],
+        "logs": [
+            {
+                "event":"<strong class=\"text-warning\">Error</strong> on website analytics configurations",
+                "faIcon":"fa-warning",
+                "time":"Yesterday"
+            },
+            {
+                "event":"<strong class=\"text-warning\">Error</strong> on website analytics configurations",
+                "faIcon":"fa-warning",
+                "time":"Yesterday"
+            },
+            {
+                "event":"<strong class=\"text-warning\">Error</strong> on website analytics configurations",
+                "faIcon":"fa-warning",
+                "time":"Yesterday"
+            }
+        ]
+    }
+}
